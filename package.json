@@ -1,0 +1,28 @@
+{
+  "name": "screen",
+  "version": "0.0.1",
+  "description": "ss",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ --platform=win32 --arch=ia32 --icon=assets/img/app.ico --out=out --no-prune --overwrite --version-string.FileDescription=screen --version-string.ProductName=screen",
+    "installs": "node ./script/installer.js"
+  },
+  "keywords": [
+    "file",
+    "find"
+  ],
+  "author": "GitHub",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.1",
+    "electron-packager": "^8.5.2",
+    "electron-winstaller": "^2.5.2",
+    "exec-limiter": "^3.2.6",
+    "jQuery": "^1.7.4",
+    "jsonfile": "^2.4.0",
+    "mkdirp": "^0.5.1",
+    "node-dir": "^0.1.16",
+    "phantomjs": "^2.1.7"
+  }
+}

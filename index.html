@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Screen</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="wrap" data-tabs>
+    <div class="nav">
+        <ul>
+            <li>setting 하기.</li>
+            <li>프로젝트 추출.</li>
+            <li>상세보기.</li>
+        </ul>
+    </div>
+    <div class="visual">
+        <div id="box01" class="visual-box">
+            <div class="board-write">
+                <table>
+                    <colgroup>
+                        <col style="width: 25%;"/>
+                        <col style="width: 75%;"/>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope='col'><label for="txt-01">프로젝트 이름</label></th>
+                        <td>
+                            <input type="text" id="txt-01" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope='col'><label for="txt-02">프로젝트 경로</label></th>
+                        <td>
+                            <div class="fid">
+                                <button class="party" id="party01">폴더 선택</button>
+                                <input type="text" id="txt-02" class="partyTxt"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope='col'><label for="txt-03">프로젝트 URL</label></th>
+                        <td>
+                            <input type="text" id="txt-03" />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" id="submit01" >셋팅 파일 생성</button>
+            </div>
+        </div>
+        <div id="box02" class="visual-box">
+            <ul>
+                <li>
+                    <button class="party" id="party02">추출.</button>
+                </li>
+            </ul>
+        </div>
+        <div id="box03" class="visual-box">
+            <div id="free" class="free-wall">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    require('./renderer.js');
+</script>
+</body>
+</html>

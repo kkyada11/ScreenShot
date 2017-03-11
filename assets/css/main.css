@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* common setting */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*html, body {min-width: 1024px;}*/
+
+body {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: Malgun Gothic, "맑은 고딕", Hevetica, AppleGothic, Sans-serif;
+	font-size: 12px;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: auto;
+}
+
+.nav ul {
+	overflow: hidden;
+	width: 100%;
+}
+
+.nav ul li {
+	float: left;
+	width: 100%;
+	color: #000;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	text-decoration: none;
+}
+
+.nav ul li.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.visual {
+	overflow: hidden;
+	padding-left: 150px;
+}
+
+.visual .visual-box {
+	display: none;
+	background-color: #eaeaea;
+	min-height: 160px;
+}
+
+.visual-box input[type=text] {
+	display: block;
+	width: 100%;
+	height: 24px;
+	font-size: 12px;
+	line-height: 24px;
+	box-sizing: border-box;
+}
+
+.visual-box button {
+	display: inline-block;
+	border: 0;
+	top: 3px;
+	left: 3px;
+	width: 80px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.visual-box ul {
+	overflow: hidden;
+}
+
+.visual-box ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 24px;
+}
+
+.visual-box .fid {
+	position: relative;
+}
+
+.visual-box .fid input[type=text] {
+	padding-left: 84px;
+}
+
+.visual-box .fid button {
+	border: 0;
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 80px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.visual-box .board-write {
+	margin-bottom: 10px;
+}
+
+.visual-box .btn-wrap {
+	text-align: center;
+}
+
+.visual-box .free-wall {
+	overflow: hidden;
+	width: 100%;
+	min-height: 100px;
+}
+
+.visual-box .free-wall .thumb {
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.visual-box .free-wall .cell {
+	width: 400px;
+}
